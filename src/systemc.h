@@ -115,7 +115,9 @@
     using std::fputs;
     using std::getc;
     using std::getchar;
+#if defined(__cplusplus) && (__cplusplus < 201103L)
     using std::gets;
+#endif
     using std::putc;
     using std::putchar;
     using std::puts;
